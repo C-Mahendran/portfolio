@@ -1,0 +1,128 @@
+/* .nave{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.head{
+  color: #f4f4f4;
+  text-decoration: none;
+}
+.menu{
+  display: flex;
+}
+.menu ul{
+  display: flex;
+  list-style:none;
+}
+.navbar{
+  position:fixed;
+  width: 100%; 
+  background-color: rgb(37, 37, 37);
+}
+.anger{
+  padding: 0 10px;
+  text-decoration:none;
+  color: aliceblue;
+}
+.toggle-btn{
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.toggle-btn .bar {
+  width: 25px;
+  height: 3px;
+  color: white;
+  background: #f4f4f4;
+  margin: 4px 0;
+} */
+.nave {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Vertically center items */
+  padding: 10px 20px; /* Padding around content */
+}
+
+.head {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(50, 49, 49);
+  z-index: 1000; /* Ensure the navbar stays on top */
+  top: 0;
+}
+
+.anger {
+  padding: 0 10px;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 16px;
+  text-transform: uppercase; /* Optional: makes text uppercase */
+}
+
+.toggle-btn {
+  display: none; /* Hide by default on large screens */
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.toggle-btn .bar {
+  width: 50px;
+  height: 10px;
+  color: aliceblue;
+  background: #f4f4f4;
+  margin: 4px 0;
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Hide the menu on smaller screens by default */
+    position: absolute;
+    top: 60px; /* Adjust based on navbar height */
+    right: 0;
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .menu.active {
+    display: flex; /* Show the menu when it has the 'active' class */
+  }
+.toggle-btn {
+    display: flex; /* Show the toggle button on smaller screens */
+  }
+.bar{
+  width: 50px;
+  height: 10px;
+  color: aliceblue;
+  margin: 4px 0;
+}
+.anger {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}

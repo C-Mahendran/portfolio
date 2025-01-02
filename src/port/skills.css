@@ -1,0 +1,10 @@
+#skills-section{
+    padding: 5rem;
+    height:100vh;
+    background:linear-gradient(40deg,rgb(46, 145, 148),rgb(148, 148, 111),black);
+    }
+@media only screen and (max-width:1024px) {
+#skills-section{
+        height:100%;
+    }
+}

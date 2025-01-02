@@ -1,0 +1,26 @@
+#about-section {
+  height: 100vh; 
+ top: 0;
+  padding:5rem;
+  background: linear-gradient(40deg, rgb(38, 34, 26), rgb(129, 81, 81), rgb(9, 10, 10));
+}
+
+.img2 {
+  height: 300px;
+  margin: 10px;
+  width: auto;  /* Ensures the width of the image adjusts proportionally */
+}
+@media only screen and (max-width: 768px) {
+  #about-section {
+      height: 100%;  /* Adjust height to content size on smaller screens */
+      width: 100%;   /* Ensure section spans the full width of the screen */
+      padding: 20px; /* Reduce padding on mobile for better fit */
+  }
+
+  .img2 {
+      padding-right: 0;  /* Add space to the right of the image */
+      width: 50%;  
+      height:100px;        /* Make the image responsive */
+      height: auto;        /* Maintain aspect ratio of the image */
+  }
+}
