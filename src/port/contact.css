@@ -1,0 +1,88 @@
+ #contact-section{
+  background:linear-gradient(40deg,rgb(19, 20, 20),rgb(16, 16, 17),rgb(86, 83, 83));
+    margin:0;
+    padding-top:5rem;
+
+ } 
+.contact{
+    width:90%;
+    height: 43vh;
+    padding: 10px;
+    box-shadow:-1px -3px  20px rgb(173, 155, 155);
+    background-color: rgb(56, 52, 52);
+}
+.icon{
+    font-size:30px;
+    color: rgb(43, 29, 114);
+}
+.call{
+    color: rgb(250, 247, 250);
+}
+.call:hover{
+    color: rgb(42, 92, 131);
+}
+.email{
+    color: white;
+}
+.email:hover{
+    color: rgb(42, 92, 131);
+}
+.locat{
+    
+    color: white;
+}
+.locat:hover{
+    color: rgb(42, 92, 131);
+}
+.facebook{
+    padding:5px;
+    color: white;
+
+}
+.whatsapp,.twiter,.insta{
+    padding:10px;
+    color: white;;
+
+}
+.facebook:hover{
+    color: rgb(42, 92, 131);
+}
+.whatsapp:hover{
+    color: rgb(42, 92, 131);
+}
+.twiter:hover{
+    color: rgb(42, 92, 131);
+}
+.insta:hover{
+    color: rgb(42, 92, 131);
+    cursor: pointer;
+}
+.submit{
+    border-radius:20px;
+    width:30%;
+    border: none;
+}
+.submit:hover{
+   background-color:rgb(42, 92, 131) ;
+}
+ 
+.emailbox{
+    width:100%;
+}
+
+@media only screen and (max-width:1024px){
+    #contact-section{
+        margin:0;
+    }
+    .contact{
+        height:100%; 
+        width: 100%;
+        padding-top: 40px;
+    }
+    .email{
+        margin:0;
+    }
+    .submit{
+        width:50%;
+    }
+}

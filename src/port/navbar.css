@@ -1,128 +1,154 @@
-/* .nave{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  left:0;
+  right:0;
+  z-index:1000;
 }
-.head{
-  color: #f4f4f4;
-  text-decoration: none;
-}
-.menu{
-  display: flex;
-}
-.menu ul{
-  display: flex;
-  list-style:none;
-}
-.navbar{
-  position:fixed;
-  width: 100%; 
-  background-color: rgb(37, 37, 37);
-}
-.anger{
-  padding: 0 10px;
-  text-decoration:none;
-  color: aliceblue;
-}
-.toggle-btn{
-  display: none;
-  flex-direction: column;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.toggle-btn .bar {
-  width: 25px;
-  height: 3px;
-  color: white;
-  background: #f4f4f4;
-  margin: 4px 0;
-} */
 .nave {
-  width: 100%;
   display: flex;
-  justify-content: space-between; /* Space between items */
-  align-items: center; /* Vertically center items */
-  padding: 10px 20px; /* Padding around content */
+  justify-content: space-between;
+  margin: 0 auto; 
+  width: 100%;
 }
 
-.head {
-  color: #f4f4f4;
+.navuser .head {
+  color: #fff;
   text-decoration: none;
+}
+.navuser{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  
+}
+
+.navuser{
+  font-size: 2rem;
+  margin: 0;
+}
+
+.navmedia {
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
 .menu {
-  display: flex;
-  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
 }
 
-.menu ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
+.menu:hover {
+  color: #f0a500;
+}
+
+/* Offcanvas styles */
+.offcanvas-header {
+  background-color: #333;
+  color: #fff;
+}
+
+.offcanvas-body {
+  background-color: #222;
+  color: #fff;
+
+}
+
+.nav-links {
+  list-style-type: none;
   padding: 0;
 }
 
-.navbar {
-  position: fixed;
-  width: 100%;
-  background-color: rgb(50, 49, 49);
-  z-index: 1000; /* Ensure the navbar stays on top */
-  top: 0;
+.nav-links li {
+  margin: 15px 0;
 }
 
 .anger {
-  padding: 0 10px;
+  color: #fff;
   text-decoration: none;
-  color: aliceblue;
-  font-size: 16px;
-  text-transform: uppercase; /* Optional: makes text uppercase */
+  font-size: 1.3rem;
 }
 
+.anger:hover {
+  color: #f0a500;
+}
+
+/* Toggle button styles */
 .toggle-btn {
-  display: none; /* Hide by default on large screens */
+  display: none;
   flex-direction: column;
-  background: none;
+  gap: 5px;
+  background: transparent;
   border: none;
   cursor: pointer;
-  padding: 10px;
+  padding: 0;
+  z-index: 1;
 }
 
 .toggle-btn .bar {
-  width: 50px;
-  height: 10px;
-  color: aliceblue;
-  background: #f4f4f4;
-  margin: 4px 0;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
-/* Media Query for screens smaller than 768px */
+@media (max-width: 1024px) {
+  .navmedia {
+    display: none; 
+  }
+
+  .toggle-btn {
+    display: flex; 
+  }
+
+
+}
+
 @media (max-width: 768px) {
-  .menu {
-    display: none; /* Hide the menu on smaller screens by default */
-    position: absolute;
-    top: 60px; /* Adjust based on navbar height */
-    right: 0;
-    background-color: rgb(37, 37, 37);
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
+  .navmedia {
+    display: none; 
   }
 
-  .menu.active {
-    display: flex; /* Show the menu when it has the 'active' class */
+  .toggle-btn {
+    display: flex; 
   }
-.toggle-btn {
-    display: flex; /* Show the toggle button on smaller screens */
+
+  .offcanvas-header {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    
   }
-.bar{
-  width: 50px;
-  height: 10px;
-  color: aliceblue;
-  margin: 4px 0;
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center; 
+  }
+
+  .anger {
+    font-size: 1.4rem; 
+  }
+
+  .toggle-btn .bar {
+    width: 35px; 
+    height: 5px;  
+    color: #fff;
+  }
 }
-.anger {
-    font-size: 14px; /* Adjust font size for smaller screens */
+@media (max-width: 480px) {
+  .menu {
+    font-size: 1rem; 
+  }
+  .anger {
+    font-size: 1.2rem; 
+  }
+
+  .toggle-btn .bar {
+    width: 28px;
+    height: 4px;
   }
 }

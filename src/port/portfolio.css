@@ -1,45 +1,6 @@
-*{
-    margin: 0;
-    padding:0;
-    /* box-sizing:border-box; */
-/* background-color: black; */
-
-/* box-shadow:0 0 40px bisque; */
-/* box-shadow:0 0 40px rgb(42, 95, 126);  */
-}
 body{
   background-color: black;
-  /* overflow-y: hidden; */
 }
-/* skill section */
-
-#project-section{
-  padding:5rem;
-  /* overflow-y:hidden; */
-  height:100vh;
-  background:linear-gradient(40deg,rgb(46, 145, 148),rgb(148, 148, 111),black);
-}
-#contact-section{
-  /* padding:40px; */
-  background:linear-gradient(40deg,rgb(46, 145, 148),rgb(148, 148, 111),black);
-}
-/* home */
-.container1{
-  padding-top:5rem;
-}
-/* submit */
-.see{
-  text-decoration:none;
-  color: rgb(20, 21, 21);
-  margin: -5px;
-   /* box-shadow:0 0 20px; */
-}
-.see:hover{
-  cursor: pointer;
-  color: rgb(45, 47, 48);;
-  box-shadow:-1px -2px 10px rgb(93, 52, 130);
-}
-/*  */
 .footer{
   background-color: rgb(43, 43, 43);
   margin-top: 5px;
@@ -47,42 +8,6 @@ body{
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  
   color: aliceblue;
   padding: 0 10px;
-
 }
-/* contact form */
-/* .contact-form {
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.contact-form button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: #45a049;
-} */
-/* @media screen and (max-width:320px) {
-  .navbar .nave{
-    display: none;
-  }
-} */

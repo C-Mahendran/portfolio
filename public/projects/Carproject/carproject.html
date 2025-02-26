@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luxury CARS</title>
+    <link rel="stylesheet" href="car.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    
+    .imm{
+        height: 100px;
+        width: 100px; 
+    }
+    .end{
+        display: flex;
+        background-color: black;
+       
+}
+strong{ 
+    color: white;
+    height: 200px;
+    width: 400px;
+    margin-bottom: 50px;
+    padding:10px;
+    font-size:30px;
+}
+ @media only screen and (max-width:426px) {
+    .imm{
+       /* height: 100%; */
+       /* width: 100%; */
+    } 
+    strong{
+    margin:0;
+    font-size: 15px;
+    }
+    input{
+        font-size: 10px;
+    margin:0;
+    width: 80%;
+    padding: 1px;
+}
+button{
+    margin:2px;
+    padding:1px;
+    font-size: 10px;
+}
+.end{
+    flex-direction: column;
+    margin:0;
+    padding:10px;
+}
+} 
+/*  */
+ .end1{
+        background-image:url("company.svg");
+        display: flex;
+        background-repeat: no-repeat;
+        justify-content:center;
+        background-color: rgb(53, 47, 47);
+        color: black;
+        height: 500px;
+} 
+.aa1{
+    background-image: url('tap1.avif');
+    height:95%;
+    width:700px;
+    margin:15px;
+    background-repeat:no-repeat;
+}
+.s2{
+    font-size:15px;
+    padding-left:20px;
+    
+}
+@media  only screen and (max-width:426px) {
+    .s2{
+    font-size: small;
+    height: 600px;
+    }
+    .s1{
+        font-size:10px;
+    }
+    .aa1{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        width:200%;
+        height:470px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .end1{
+        height: 500px;
+    }
+    .improdect{
+        width:100%;
+        height: 300px;
+    }
+}
+
+
+/*  */
+
+.s1{
+   background-color: black;
+   margin-top: 5px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 50px;
+   color: aliceblue;
+   padding: 0 10px;
+
+}
+.grid{
+    display: grid;
+    grid-template-areas:'box-1 box-2 box-3 box-4'
+                        'box-1 box-2 box-3 box-4';
+}
+.box{
+    margin:5px;
+    padding: 10px;
+    height:250px;
+    margin: 0;
+}
+.box1{grid-area:box-1;background-color:rgb(236, 234, 234);}
+.box2{grid-area:box-2;background-color:rgb(236, 234, 234);}
+.box3{grid-area:box-3;background-color:rgb(236, 234, 234);}
+.box4{grid-area:box-4;background-color:rgb(236, 234, 234);}
+/* prr */
+
+.pro{
+    display: grid;
+    grid-template-areas:'box-11 box-11 box-12 box-12'
+                        'box-11 box-11 box-12 box-12';
+                
+}
+.box6{
+    background-color: rgb(53, 47, 47);
+    margin:50px;
+    padding: 1px;
+    width:100%;
+    height:100%;
+    margin: 0;
+    color: aliceblue;
+}
+.box11{grid-area:box-11; background-color: rgb(53, 47, 47);}
+.box12{grid-area:box-12; background-color: rgb(53, 47, 47);}
+
+.rejestry{
+    display: grid;
+    background-color:black;
+    grid-template-areas:'box-13 box-14 box-15 box-16'
+                        'box-13 box-14 box-15 box-16';
+
+
+}
+.box7{
+    padding: 30px;
+    height:250px;
+    color: aliceblue;
+}
+.box13{grid-area:box-13;}
+.box14{grid-area:box-14;}
+.box15{grid-area:box-15;}
+.box16{grid-area:box-16;}
+
+/* request */
+/* contact */
+@media only screen and (max-width:426px) {
+    .grid{
+        display:grid;
+        text-align: center;
+        grid-template-areas:'box-1 box-1'
+                    'box-2 box-2'
+                    'box-3 box-3'
+                    'box-4 box-4';
+
+    }
+    .box{
+    margin:5px;
+    padding: 10px;
+    height:150px;
+    margin: 0;
+    background-color: rgb(241, 238, 234);
+}
+    .pro{
+    display:grid;
+        text-align: center;
+grid-template-areas:'box-11 box-11 box-11 box-11'
+                    'box-12 box-12 box-12 box-12';
+                  ;
+
+    }
+    .box7{
+    padding: 10px;
+    height:200px;
+    margin: 0;
+    color: aliceblue;
+}
+    .rejestry{
+    display:grid;
+grid-template-areas:'box-13 box-14 box-15 box-16'
+                    'box-13 box-14 box-15 box-16';
+                  ;
+
+    }
+    .improdect{
+        width: 100%;
+        height: 220px;
+    }
+  .contact{
+    width:100%;
+
+   } 
+.width{
+    width:110%;
+    padding:1px;
+    height:50%;
+border-radius:20px;
+
+ 
+}
+span{
+    font-size:11px;
+}
+}
+.username{
+    height: 30px;
+     width:330px;
+     margin: 10px;
+}
+.password{
+    height: 30px; width:330px;
+     margin:10px;
+}
+.rem{
+    padding-right:230px;
+    
+}
+.bu{
+    width:15px;
+}
+
+.sig{
+    background-color: rgb(158, 154, 154);
+    display:inline-block;
+     width: 330px;
+     margin:10px;
+     padding: 6px;
+}
+.mar{
+    padding-right:10px;
+}
+.for1,.for2{
+    margin:10px;
+}  
+/*  */
+
+@media only screen and (max-width:768px) {
+    .grid{
+    display:grid;
+        text-align: center;
+grid-template-areas:'box-1 box-1'
+                    'box-2 box-2'
+                    'box-3 box-3'
+                    'box-4 box-4';
+
+    }
+    .box{
+    margin:5px;
+    padding: 10px;
+    height:150px;
+    margin: 0;
+    background-color: rgb(241, 238, 234);
+}
+    .pro{
+    display:grid;
+        text-align: center;
+grid-template-areas:'box-11 box-11 box-11 box-11'
+                    'box-12 box-12 box-12 box-12';
+                  ;
+
+    }
+    .box7{
+    padding: 10px;
+    height:200px;
+    margin: 0;
+    color: aliceblue;
+}
+    .rejestry{
+    display:grid;
+grid-template-areas:'box-13 box-14 box-15 box-16'
+                    'box-13 box-14 box-15 box-16';
+                  
+
+    }
+}
+
+@media only screen and (max-width:426px) {
+     .radio{
+        margin: 15px;
+        
+    } 
+     .mark{ 
+     width: 10px; 
+    } 
+ .dis{
+    width: 10px;
+    }
+    .username{
+        width:150px;
+        border-style: solid;
+        height:35px;
+        text-align: center;
+    }
+    .password{
+        width:150px;
+        border-style: solid;
+        height:35px;
+        text-align: center;
+    }
+    .rem{
+        padding-right: 65px;
+        }
+    .bu{
+        width:15px;
+       }
+    .sig{
+    display:inline-block;
+     height: 30px;
+     width: 150px;
+     margin:10px;
+     padding: 6px;
+
+     }
+}
+</style>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+        </label>
+        <label class="logo">Car</label>
+         <ul>
+          <li><a href="#home-section">Home</a></li>   
+          <li><a href="#model-section">Model</a></li>
+          <li><a href="#insurance-section">Insurance</a></li>
+          <li><a href="#protect-section">Protect</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+          <li><a href="#sign-section">Sign/up</a></li>
+         </ul>
+    </nav>   
+    </div>
+<!--  -->
+<section id="home-section"> 
+<div class="main">   
+<div class="bo">
+<h2 class="t1"> top luxury Car for sale<br>
+     Shop Thousands of luxury,exotic & classic cars
+     <br>
+<button class="b1">SHOW MORE</button>
+</h2>
+</div>
+</div>
+</section>
+<section id="model-section">
+    <div class="a1">
+<h3 class="m1">Luxury Cars for Sale in our Premier Marketplace</h3>
+<div class="table1">
+<div class="name">
+<img class="l2"  src="black.jpg" height="" width="">
+<img class="l2"  src="block.jpg" height="" width="">
+<img class="l2"  src="car.jpg" height="" width="">
+<img class="l2"  src="car\lambor.webp" height="" width="">
+</div>
+</div>
+</div>
+<h6 class="u1">Huracan Sterrato<br>$299,951</h6>
+<h4 style="color:rgb(66, 53, 92);font-size:30px;padding: 10px;">Variety Car Models</h4>
+<p class="p1">
+    If you're thinking about buying a luxury car, you're not alone. Sales for luxury car brands are on the rise, and there are many reasons why owning a premium car is a great idea. From the many benefits of luxury cars to the current state of the market, now is a great time to purchase a luxurious vehicle.
+    Fancy cars are a status symbol. They convey success, wealth, and power. Owning can make you feel good about yourself and give you a sense of accomplishment.
+    Luxury vehicles are also an excellent investment. It’s easy to find exotics that hold their value, and can still be sold for a high price when you're ready to upgrade.
+    However, you don’t need to break the bank when shopping for cars. Purchasing a pre-owned exotic, luxury or performance vehicle could be more affordable than you think.
+    We have a variety of makes and models of high-end car brands to choose from, so you're sure to find the perfect one for you.
+    Feel free to visit any of our premier car dealers and find a luxury sedan, sports car, convertible or SUV for sale. Here are just a few of the many benefits of owning a luxury car:
+    Premium vehicles are designed with the utmost attention to detail, so you can expect a smooth, comfortable ride every time. Plus, with powerful engines and state-of-the-art features, the top luxury cars offer an unparalleled driving experience.
+    Whether you're picking up clients or going on a first date, driving one of the most ultra luxury vehicles is sure to turn heads.
+    Whether you're looking for style, comfort, performance, or safety, owning a premium vehicle or exotic is sure to enhance your driving experience. So if you're in the market for a new vehicle or looking for the best used luxury cars, be sure to check out our luxury cars for sale.
+    Nothing compares to driving a luxurious automobile. The comfort, fashion, and strength are all exhilarating. If you're looking for one, now's the right time.
+    Here's why: the best luxury cars are currently have the best resale prices and lowest cost of ownership.</p>
+<div class="con">  
+</div>
+<!--  -->
+<div class="table1" style="display: flex; justify-content: center; align-items: center; text-align: center;">
+<div class="l1"><img class="l" src="car\lam1.webp">
+<h6 class="u2">2024 Lamborghini Aventador
+     $775,988</h6></div>
+<div class="l1"><img class="l" src="car\lam2.webp"><h6 class="u2">2024 Lamborghini Revuelto
+    $799,980</h6></div>
+<div class="l1"><img class="l" src="car\lam5.webp"><h6 class="u2">2024 Lamborghini Revuelto
+    $799,980</h6></div>
+</div>
+<!--  -->
+<div class="boxa1">
+</div>
+</section>
+<section id="insurance-section">
+<div class="boxa2">   
+<h3 class="m2">Personalized Car Insurance 
+<br>Reliable protection for your vehicles
+<!--img src="block.jpg"-->
+
+<br>
+<label class="i1">Email  
+</label>
+<label class="i2">Get a guote
+</h3>
+</div>
+<h6 class="u3">Why choose coverage through duPont REGISTRY Insurance?<br>
+   <p class="p2"> Our A+ rated coverage is crafted by experts with decades of experience in luxury and collector vehicles. We deliver not only top-tier protection but also the best service ratings, ensuring your high-end automobile receives the expert care it deserves.</p>
+</h6>
+</section>
+<!-- prod -->
+ <hr>
+<section id="protect-section" style="padding-top:50px;">
+<div class="pro">
+   
+    <div class="box6 box11" style="padding:30px;height:100vh;">
+        <div><h2 style="display: flex;justify-content:center; padding: 10px;">Protect</h2></div>
+        <h3 style="color: rgb(22, 176, 25);">Our Best Coverage More Than 750 Parts Covered</h3>
+        <p>PriorityOne Unlimited is Alpha Warranty’s exclusionary coverage. PriorityOne Unlimited offers unlimited mileage terms with superior benefits and eligibility for vehicles up to 10 model years and 150,000 miles.</p>
+       <h3 style="color:rgb(22, 176, 25);">Mid Level Coverage More Than 260 Parts Covered</h3>
+        <p>Alpha Warranty’s A+ Unlimited offers mid-level vehicle protection that goes above and beyond mid-level service. This plan offers exceptional benefits and eligibility for vehicles up to 10 model years and 175,000 miles.</p>
+        <h3 style="color:rgb(22, 176, 25);">Coverage to fit your lifestyle</h3>
+        <p>Our products make buying the right coverage for your exotic or highline vehicle easier.   They have simple terms, no mileage restrictions, and cover the parts that many other programs will not.   Rest assured that your car is covered by one of the most trusted brands in the luxury auto industry.
+
+    </p>
+    </div>
+        <div class="box6 box12" style="padding:60px;box-shadow:-1px -3px 20px ;"><img style="box-shadow:-1px -3px 20px ;" src="tap1.avif" height="400px" width="400px"></div>
+</div>
+<img class="improdect" src="company_banner.webp" width="100%" height="100%">
+</section>
+<hr>
+<!-- contact -->
+<section id="contact-section">
+    <div class="contact" style="background-color: black;height:600px;padding:60px; top:40px;">
+        <div style="padding:20px;">
+<h3 class="conta" style="color:white;font-size:30px; display: flex; justify-content: center;margin-top:90px;">Welcome to dupont Rejistry Support How can we help you? </h3></div>
+ <div  class="width" style="display: flex; justify-content:center;height:30px;">
+    <input style="padding:10px;font-size:15px; width:600px;border-style:solid; border-radius:20px;height:20px;" type="text" placeholder="search for answers....">
+</div> 
+</div>
+<!-- <div class="grid" style="background-color: aqua;"> -->
+<div class="grid" style="text-align: center;" >
+
+<div class="box box1"><i class="bi bi-distribute-horizontal"style="font-size:30px;color: rgb(87, 132, 198);"></i>
+<h3 style="" >registry Preferred</h3>
+<p style="color: rgb(87, 132, 198);">resgitrys preferrd program was carefull designed to provid our esteemed dealers unaparralled access to premium solution</p></div>
+
+<div class="box box2"> <i class="bi bi-car-front-fill"style="font-size: 30px;color: rgb(87, 132, 198);"></i><h3>Dearly Faqs</h3>
+<p style="color: rgb(87, 132, 198);">Thank you for being part of the registry dealer network. here are some faqs and tips that will assist you with managing your dealer account</p>
+</div>
+<div class="box box3">
+    <i class="bi bi-globe2"style="font-size: 30px;color: rgb(87, 132, 198);"></i>
+    <h3>Contact Advertising</h3>
+    <p style="color: rgb(87, 132, 198);">If you wish to contact us about asvertising you can contact us here so we can better serve you</p>
+ </div> 
+  <div class="box box4"><i class="bi bi-question-lg" style="font-size: 30px;color: rgb(87, 132, 198);"></i><h3>Contact support</h3>
+<p style="color: rgb(87, 132, 198);">If you aren't able to find a solution in the previous Faqs,you can contact us here so we can invesigate your issue and assist you futher</p>
+</div>  
+</div>
+</section>
+<br>
+<!--sign -->
+ <hr>
+<section id="sign-section">
+    <diV class="sign" style="text-align: center;;height:600px;margin:0;padding-top:80px;">
+<h3 style="font-size:40px;">Sign In</h3>
+<!--<div>-->
+ <div class="radio" ><input class="mark" type="radio" name="ok"><span class="mar">Marketplace</span>
+<input class="dis" style="margin:1px;" type="radio" name="ok"><span>Discovery Dealer</span></div>
+<div >
+<input class="username" type="namebox" placeholder="Username"></div>
+<div >
+<input class="password" type="password" placeholder="password"></div>
+<div class="rem"><input class="bu" type="button"><span>Remember me</span></div>
+       
+<div class="sig"><span>Sign in</span></div>
+<div class="for1"><span>Forgot your password?</span></div>
+<div style="text-decoration: dashed;"><span>or</span>
+</div>
+<div class="for2">
+<span>Don't have account? Sign Up</span>
+</div>
+</div>
+</diV>
+</section>   
+<hr>  
+<!--section>
+    <div class="end">
+<strong class="nd">logo
+    <span class="imm"></span><br>
+    <span>
+    <i class="bi bi-facebook"></i>
+    <i class="bi bi-twitter-x"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-youtube"></i>
+    </span>
+</strong>
+<strong class="nd">Registry<br>
+    <span>about us</span><br>
+    <span>contact us</span><br>
+    <span>contact support</span><br>
+    <span>advertis</span><br>
+</strong>
+<strong class="en">Affiliates<br>
+    <span>Sotheby’s Motorsport</span><br>
+    <span>FerrariChat</span><br>
+    <span>Canossa</span><br>
+    <span>Petrolicious</span><br>
+</strong>
+<strong class="en">Subscribe<br>
+    <span>Be the first to know about new listings!</span><br>
+    <input type="email" placeholder="enter email address"><br>
+    <button>sign up</button>
+    <span></span>
+    <span></span>
+</strong>
+<br>
+</div></section-->
+<hr>  
+<section>
+    <div class="rejestry">
+
+<div class="box7 box13">
+   <h3> logo</h3>
+    <i class="bi bi-facebook"></i>
+    <i class="bi bi-twitter-x"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-youtube"></i>
+</div>
+<div class="box7 box14">
+    <h3>Registry</h3>
+    <p>about us</p>
+    <p>contact us</p>
+    <p>contact support</p>
+    <p>advertis</p>
+</div>
+<div class="box7 box15">
+    <h3>Affiliates</h3>
+    <p>Sotheby’s Motorsport</p>
+    <p>FerrariChat</p>
+    <p>Canossa</p>
+    <p>Petrolicious</p>
+</div>
+<div class="box7 box16">
+    <h3>Subscribe</h3>
+    <p>Be the first to know about new listings!</p>
+    <input type="email" placeholder="Enter email address">
+    <br>
+    <button>Sign up</button>
+</div>
+</div></section>
+
+<diV class="s1">
+ <div class="aa2">
+    © 2024 DRIVEN LIFESTYLE. All Rights Reserved.
+ </div>
+ <div class="f1">Privacy PolicyTerms and Conditions</div>
+</diV>
+</section>
+
+</section>
+</body>
+</body>
+</html>

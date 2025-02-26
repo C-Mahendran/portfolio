@@ -1,26 +1,70 @@
+
 #about-section {
-  height: 100vh; 
- top: 0;
-  padding:5rem;
-  background: linear-gradient(40deg, rgb(38, 34, 26), rgb(129, 81, 81), rgb(9, 10, 10));
+  background-color: rgb(84, 63, 35);
+  padding: 50px 0;
 }
 
 .img2 {
-  height: 300px;
-  margin: 10px;
-  width: auto;  /* Ensures the width of the image adjusts proportionally */
+  width: 100%;
+  max-width: 400px;
+  height:90vh;
+  margin-top:10px;
+  padding:20px;
+  border-radius: 50px;
+  object-fit: cover;
+ 
 }
-@media only screen and (max-width: 768px) {
-  #about-section {
-      height: 100%;  /* Adjust height to content size on smaller screens */
-      width: 100%;   /* Ensure section spans the full width of the screen */
-      padding: 20px; /* Reduce padding on mobile for better fit */
+.text-light {
+  color: #ffffff;
+  width: 100%;
+}
+
+.text-warning {
+  color: #ffc107 !important;
+}
+
+.h2-head {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.p-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.about  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about {
+  flex: 1;
+  text-align: center;
+}
+
+.aboutcontent {
+  flex: 1.5;
+  text-align: left;
+}
+
+@media (max-width: 968px) {
+  .about {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .aboutcontent {
+      text-align: center;
+      padding:20px;
   }
 
   .img2 {
-      padding-right: 0;  /* Add space to the right of the image */
-      width: 50%;  
-      height:100px;        /* Make the image responsive */
-      height: auto;        /* Maintain aspect ratio of the image */
+      max-width: 300px;
   }
 }
+
+

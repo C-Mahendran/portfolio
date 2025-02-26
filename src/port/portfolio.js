@@ -1,11 +1,11 @@
-import './portfolio.css'
+import './portfolio.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './home'
+import Home from './home';
 import About from './about';
 import Skills from './skills';
 import Contact from './contact';
 import Navbar from './navbar';
-// import Video from './video';
+import Project from './project';
 
 export default function portfolio() {
   return (
@@ -15,12 +15,10 @@ export default function portfolio() {
         <Home />
         <About />
         <Skills />
-      </section>
-{/* <Video /> */}
-      <section >
+        <Project />
         <Contact />
       </section>
-      <div className=''>
+     <div className='footer1'>
         <footer className="footer">
           <div>
             © 2024 MAHENDRAN. All Rights Reserved.

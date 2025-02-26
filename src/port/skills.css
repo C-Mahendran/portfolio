@@ -1,8 +1,21 @@
 #skills-section{
-    padding: 5rem;
     height:100vh;
-    background:linear-gradient(40deg,rgb(46, 145, 148),rgb(148, 148, 111),black);
+    background-color:black;
+    align-items: center;
+    display: flex; 
     }
+.bg{
+    font-style:italic;
+    box-shadow:-1px -2px 3pxc;
+    background-color: #333;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  .bg:hover {
+    font-style:italic;
+    transform: scale(1.1); 
+    color: black;
+    background-color: #e7e5e5; 
+  }
 @media only screen and (max-width:1024px) {
 #skills-section{
         height:100%;
