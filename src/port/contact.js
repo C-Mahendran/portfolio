@@ -111,7 +111,7 @@ const Contact = () => {
 
                       <span>
                         <a className='whatsapp' href="https://wa.me/" target="_blank" rel="noopener noreferrer">
-                          <i class="fa-brands fa-whatsapp"></i>
+                          <i class="fa-brands fa-whatsapp white"></i>
                         </a>
                       </span>
                       <span>
