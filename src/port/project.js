@@ -41,16 +41,10 @@ export default function Project() {
             </div>
             <div className='col-lg-4'>
               <div style={{boxShadow:'-1px -5px 30px black',backgroundColor:'black'}} className='card text-center m-1'>
-              <a href='/projects/Stopwatch/stopwatch.html'><img className='w-100 h-75'src={Car} alt="React project" /></a>
+              <a href='https://mahe-car.netlify.app/'><img className='w-100 h-75'src={Car} alt="React project" /></a>
               </div>
               <p className='text-center text-dark'>CAR</p>
             </div>
-            {/* <div className='col-lg-4'>
-              <div className='card text-center m-1'>
-              <a href='/projects/Stopwatch/stopwatch.html'><img className='w-100 h-75'src={Rea}  alt="React project" /></a>
-              </div>
-              <p className='text-center text-light'>CAR</p>
-            </div> */}
           </div>
           </div>
       </section>
