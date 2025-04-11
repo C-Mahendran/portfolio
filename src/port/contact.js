@@ -84,7 +84,7 @@ const Contact = () => {
                       style={{
                         fontSize: '17px',
                         color: 'white',
-                        width: '80%',
+                        width: '100%',
                       }}
                     >
                       <span className='email'><i className="fa-regular fa-envelope p-2 fs-3 "></i></span>

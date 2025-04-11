@@ -12,7 +12,7 @@ export default function Project() {
     <>
 <section id='project-section'>
         <div className='container'>
-          <h2 className='text text-warning text-center fs-1'>Project:</h2>
+          <h2 className='text text-warning text-center fs-1'>Projects:</h2>
           <div className='row m'>
 
             <div className='col-lg-4'>

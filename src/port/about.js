@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Pic from './img/pic.jpg';
+import Picc from './img/picc.jpg';
 
 function About() {
   return (
@@ -9,7 +9,7 @@ function About() {
 <div class="">
     <div class="row about text-light ">
 <div class="col">
-    <img class="img2" src={Pic}/>
+    <img class="img2" src={Picc}/>
 </div>
 <div class="col-lg aboutcontent">  
 
